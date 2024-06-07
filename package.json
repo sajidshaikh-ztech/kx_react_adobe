@@ -2,7 +2,7 @@
   "name": "my-material-ui-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sajidshaikh-ztech.github.io/kx_react_adobe",
+  "homepage": "http://sajidshaikh-ztech.github.io/kx_react_adobe/",
   "proxy": "https://b2b-gncyehq-ytnaw27mjnraq.eu-4.magentosite.cloud",
   "dependencies": {
     "@apollo/client": "^3.10.4",
