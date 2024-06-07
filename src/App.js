@@ -21,14 +21,14 @@ function App() {
                     <BrowserRouter>
                         <Header />
                         <Routes>
-                            <Route path="/kx_member_network" element={<SignInPage />} />
-                            <Route path="/kx_member_network/registered-user" element={<RegisteredUserPage />} />
-                            <Route path="/kx_member_network/guest-user" element={<GuestUserPage />} />
-                            <Route path="/kx_member_network/machines" element={<ProductsListingPage />} />
-                            <Route path="/kx_member_network/sign-in" element={<SignInPage />} />
-                            <Route path="/kx_member_network/category-landing/:category" element={<CategoryLandingPage />} />
-                            <Route path="/kx_member_network/parts" element={<PartsListingPage />} />
-                            <Route path="/kx_member_network/solutions-listing" element={<SolutionsListingPage />} />
+                            <Route path="/kx_react_adobe/" element={<SignInPage />} />
+                            <Route path="/kx_react_adobe/registered-user" element={<RegisteredUserPage />} />
+                            <Route path="/kx_react_adobe/guest-user" element={<GuestUserPage />} />
+                            <Route path="/kx_react_adobe/machines" element={<ProductsListingPage />} />
+                            <Route path="/kx_react_adobe/sign-in" element={<SignInPage />} />
+                            <Route path="/kx_react_adobe/category-landing/:category" element={<CategoryLandingPage />} />
+                            <Route path="/kx_react_adobe/parts" element={<PartsListingPage />} />
+                            <Route path="/kx_react_adobe/solutions-listing" element={<SolutionsListingPage />} />
                         </Routes>
                         <Footer />
                     </BrowserRouter>
