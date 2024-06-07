@@ -9,9 +9,9 @@ const SignInPage = () => {
         e.preventDefault();
         console.log('Login successful!');
         if (email.toLowerCase() === 'guest') {
-            navigate('/kx_member_network/guest-user');
+            navigate('/kx_react_adobe/guest-user');
         } else  {
-            navigate('/kx_member_network/registered-user');// Redirect to RegisteredUserPage after successful login
+            navigate('/kx_react_adobe/registered-user');// Redirect to RegisteredUserPage after successful login
         }
 
     };

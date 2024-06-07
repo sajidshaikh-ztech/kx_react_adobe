@@ -30,7 +30,7 @@ function Header() {
 
     const handleOnClick = (tab) => {
         console.log('Here---- ' + tab.label);
-        navigate('/kx_member_network/'+tab.label);
+        navigate('/kx_react_adobe/'+tab.label);
     };
 
     return (
@@ -39,7 +39,7 @@ function Header() {
                 bgcolor: 'white',
             }}>
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                   <Link to={'/kx_member_network'}><img src={LogoImage} alt="Logo" style={{ height: 80, marginRight: 10 }} /></Link>
+                   <Link to={'/kx_react_adobe'}><img src={LogoImage} alt="Logo" style={{ height: 80, marginRight: 10 }} /></Link>
                 </Typography>
                 <Tabs
                     value={activeTab}
