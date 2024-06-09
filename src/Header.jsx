@@ -48,7 +48,7 @@ function Header() {
                     sx={{ flexGrow: 1 }}
                 >
 
-                    <Tab label="Machines" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "category-landing/machines" })}/>
+                    <Tab label="Machines" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "category/machines" })}/>
                     <Tab label="Parts" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "category-landing/parts" })}/>
                     <Tab label="Solutions" sx={{ typography: 'h7', fontWeight: 'bold' }} onClick={() => handleOnClick({ label: "solutions-listing" })}/>
                     <Tab label="Support & Service" sx={{ typography: 'h7', fontWeight: 'bold' }} />

@@ -8,64 +8,13 @@ import Box from "@mui/material/Box";
 import { gql, useQuery } from '@apollo/client';
 import {GET_CATEGORIES} from "../queries";
 
-const GET_SUBCATEGORIES = gql`
-  query {
-  categories(
-    filters: {
-      ids: {in: ["119"]}
-      parent_id: {in: ["2"]}
-    }
-    pageSize:3
-    currentPage: 1
-  ) {
-    total_count
-    items {
-      uid
-      level
-      name
-      path
-      children_count
-      children {
-        uid
-        level
-        name
-        path
-        children_count
-        children {
-          uid
-          level
-          name
-          path
-        }
-      }
-    }
-    page_info {
-      current_page
-      page_size
-      total_pages
-    }
-  }
-}
-`;
-
-
 const CategoryComponent = ({ category }) => {
-    //const [subcategories, setSubcategories] = useState([]);
-    const { loading, error, data } = useQuery(GET_CATEGORIES);
-    const categories = data?.categories?.items || [];
-
+    const [subcategories, setSubcategories] = useState([]);
     const titlesData = {
         "machines": ['Blasthole Drills', 'Crushing', 'Dozers', 'Draglines', 'Electric Rope Shovels', 'Entry Development'],
         "parts":    ['Air Filters', 'Breather Fitlers', 'Corrosion Resistor', 'Engine Oil Filters', 'Filters Kit', 'Fuel Filters']
     };
 
-
-    /*useEffect(() => {
-        if (data && data.categories) {
-            setSubcategories(data.categories.items);
-        }
-        console.log("Subcategories " + subcategories);
-    }, [data]);*/
 
     const imagesData = {
         'Blasthole Drills':'https://komatsu.stylelabs.cloud/api/public/content/Related_6478d3f017dc49e9a23131c29a866945?v=2c3c232f',
@@ -85,17 +34,6 @@ const CategoryComponent = ({ category }) => {
         <Container maxWidth="false" sx={{
             paddingBottom:'10vh',
         }}>
-            <div>
-                <h1>Categories and Children</h1>
-                {categories.map(category => (
-                    <div key={category.uid}>
-                        <h2>{category.name}</h2>
-                        {category.children.map(child => (
-                            <p key={child.uid}>{child.name}</p>
-                        ))}
-                    </div>
-                ))}
-            </div>
             <Grid container spacing={2} >
                 <Grid item xs={12} sx={{
                     padding:'2vh',
