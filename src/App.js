@@ -12,6 +12,7 @@ import PartsListingPage from "./pages/PartsListingPage";
 import SolutionsListingPage from "./pages/SolutionsListingPage"; // Import your Footer component
 import { ApolloProvider } from '@apollo/client';
 import client from './apolloclient'
+import MachineCategoryComponent from "./component/MachineCategoryComponent";
 
 // Option 2: BrowserRouter with basename (uncomment this block)
 function App() {
@@ -26,7 +27,7 @@ function App() {
                             <Route path="/kx_react_adobe/guest-user" element={<GuestUserPage />} />
                             <Route path="/kx_react_adobe/machines" element={<ProductsListingPage />} />
                             <Route path="/kx_react_adobe/sign-in" element={<SignInPage />} />
-                            <Route path="/kx_react_adobe/category-landing/:category" element={<CategoryLandingPage />} />
+                            <Route path="/kx_react_adobe/category-landing/:category" element={<MachineCategoryComponent />} />
                             <Route path="/kx_react_adobe/parts" element={<PartsListingPage />} />
                             <Route path="/kx_react_adobe/solutions-listing" element={<SolutionsListingPage />} />
                         </Routes>

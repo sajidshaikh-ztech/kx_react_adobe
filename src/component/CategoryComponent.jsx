@@ -106,7 +106,7 @@ const CategoryComponent = ({ category }) => {
                 </Grid>
 
                 {titlesData[category].map((item, index) => (
-                    <Grid item xs={12} sm={6} md={4} key={item} >
+                    <Grid  key={item} >
                         <Link to={`/kx_react_adobe/${category}`}>
                             <Box p={2} display="flex" alignItems="center" justifyContent="center">
                                 <img src={imagesData[item]} alt={item} style={{ width: 200, height: 200, marginRight: 20 }} />
