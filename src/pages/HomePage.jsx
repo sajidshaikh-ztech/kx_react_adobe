@@ -12,11 +12,13 @@ const HomePage = () => {
 
     return (
         <Container maxWidth="lg">
-            <Typography variant="h4" style={{ marginTop: '30px' }}>
+            <Typography variant="h4" style={{ marginTop: '30px', marginBottom:'30px' }}>
                 My Komatsu Member Network
             </Typography>
             <hr/>
-            <Box my={4}>
+            <Box my={4} sx={{
+                paddingBottom: '250px'
+            }}>
 
                 <Grid container spacing={8}>
                     <Grid item xs={12} sm={6}>
