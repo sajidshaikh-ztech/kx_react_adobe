@@ -13,6 +13,7 @@ import SolutionsListingPage from "./pages/SolutionsListingPage"; // Import your 
 import { ApolloProvider } from '@apollo/client';
 import client from './apolloclient'
 import MachineCategoryComponent from "./component/MachineCategoryComponent";
+import HomePage from "./pages/HomePage";
 
 // Option 2: BrowserRouter with basename (uncomment this block)
 function App() {
@@ -22,7 +23,8 @@ function App() {
                     <BrowserRouter>
                         <Header />
                         <Routes>
-                            <Route path="/kx_react_adobe/" element={<SignInPage />} />
+                            <Route path="/kx_react_adobe/" element={<HomePage />} />
+                            <Route path="/kx_react_adobe/signin" element={<SignInPage />} />
                             <Route path="/kx_react_adobe/registered-user" element={<RegisteredUserPage />} />
                             <Route path="/kx_react_adobe/guest-user" element={<GuestUserPage />} />
                             <Route path="/kx_react_adobe/machines" element={<ProductsListingPage />} />
