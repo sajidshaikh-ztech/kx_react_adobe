@@ -1,11 +1,11 @@
 // src/queries.js
 import { gql } from '@apollo/client';
 
-export const GET_CATEGORIES = gql`
+export const GET_PARTS_CATEGORIES = gql`
   query {
   categories(
     filters: {
-      ids: {in: ["119"]}
+      ids: {in: ["120"]}
       parent_id: {in: ["2"]}
     }
     pageSize:3

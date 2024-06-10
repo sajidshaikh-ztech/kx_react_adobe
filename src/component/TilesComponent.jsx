@@ -57,7 +57,7 @@ function TilesComponent() {
                         <Box sx={{
                             width: '200px',
                             height: '200px',
-                            backgroundColor: 'green',
+                            backgroundColor: '#140a9a',
                             color: 'primary.contrastText',
                             display: 'flex',
                             justifyContent: 'center',
@@ -80,7 +80,7 @@ function TilesComponent() {
                         <Box sx={{
                             width: '200px',
                             height: '200px',
-                            backgroundColor: 'red',
+                            backgroundColor: '#ffc82f',
                             color: 'primary.contrastText',
                             display: 'flex',
                             justifyContent: 'center',

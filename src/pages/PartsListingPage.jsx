@@ -1,11 +1,12 @@
 import React from 'react';
 import {Container} from '@mui/material';
-import PartsComponent from "../component/PartsComponent";
+
+import PartsListingComponent from "../component/PartsListingComponent";
 
 function PartsListingPage() {
     return (
         <Container>
-            <PartsComponent/>
+            <PartsListingComponent/>
         </Container>
     );
 }

@@ -52,6 +52,7 @@ const CategoryComponent = () => {
                                     <Box p={2} display="flex" alignItems="center" justifyContent="center">
                                         <Typography variant="h6" align="center" >
                                             {child.name}
+                                            {child.meta_description}
                                         </Typography>
                                     </Box>
 
